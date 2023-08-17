@@ -52,7 +52,6 @@ export default function LoginScreen({ navigation }) {
           />
         )} />
       <Text style={{ color: 'red' }}> {errors.email && <Text>Veuillez saisir votre adresse mail</Text>}</Text>
-      {errors.data.email ? 'erreur' : ''}
       <Controller
         control={control}
         rules={{

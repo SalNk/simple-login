@@ -23,6 +23,11 @@ export default function WelcomeScreen({ navigation }) {
                 style={welcomeStyle.buttonSign}>
                 Sign up
             </Text>
+
+
+            <Text style={{ position: 'absolute', bottom: 20 }}>
+                Designed with ❤ by @Sal_Aime
+            </Text>
         </Template>
     )
 }

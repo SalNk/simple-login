@@ -7,15 +7,20 @@ export default function HomeScreen({ navigation }) {
   return (
     <Template>
       <Text style={welcomeStyle.title}>Let's start</Text>
-      <Text 
-        style={{ textAlign: 'center', marginTop: 15, marginBottom : 15 }}
+      <Text
+        style={{ textAlign: 'center', marginTop: 15, marginBottom: 15 }}
       >Your amazing app starts here. Open you favorite code editor and start editing this project.</Text>
       <Text
         onPress={() => navigation.navigate('welcome')}
         style={welcomeStyle.buttonSign}>
-       Log out
+        Log out
+      </Text>
+
+      <Text style={{ position: 'absolute', bottom: 20 }}>
+        Designed with ❤ by @Sal_Aime
       </Text>
     </Template>
+
   )
 }
 
