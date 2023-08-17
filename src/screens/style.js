@@ -3,28 +3,29 @@ import { COLORS, FORM_LOGIN, SIZE } from "../outils/constants";
 
 let iconSize = 150
 
- const welcomeStyle = StyleSheet.create({
-    screen:{
+const welcomeStyle = StyleSheet.create({
+    screen: {
         flex: 1,
         display: "flex",
         justifyContent: 'center',
         alignItems: 'center',
         marginHorizontal: 45,
     },
-    icon:{
+    icon: {
         width: iconSize,
         height: iconSize,
     },
-    title:{
+    title: {
         fontSize: SIZE.h1,
         fontWeight: 'bold',
         color: COLORS.main,
-        marginTop: 15
+        marginTop: 15,
+        marginBottom: 15
     },
-    paragraph:{
+    paragraph: {
         textAlign: "center"
     },
-    button:{
+    button: {
         width: '100%',
         display: "flex",
         alignItems: 'center',
@@ -37,7 +38,7 @@ let iconSize = 150
         marginTop: 15,
         fontWeight: 'bold'
     },
-    buttonSign:{
+    buttonSign: {
         width: '100%',
         display: "flex",
         alignItems: 'center',
@@ -50,19 +51,24 @@ let iconSize = 150
         fontWeight: 'bold',
         color: COLORS.main
     },
-     input: {
-         width: '100%',
-         padding: FORM_LOGIN.vertical,
-         borderRadius: FORM_LOGIN.radius,
-         marginTop: 20,
-         borderWidth: 0.5,
-         fontWeight: 'bold'
-     },
-     absolute:{
-        display:'flex',
+    input: {
+        width: '100%',
+        padding: FORM_LOGIN.vertical,
+        borderRadius: FORM_LOGIN.radius,
+        marginTop: 5,
+        borderWidth: 0.5,
+        fontWeight: 'bold'
+    },
+    absolute: {
+        display: 'flex',
         justifyContent: 'flex-end',
         alignItems: 'flex-end',
-        textAlign:'right',
-     }
-}) 
+        textAlign: 'right',
+    },
+    iconReturn: {
+        position: 'absolute',
+        left: 0,
+        top: 40
+    }
+})
 export default welcomeStyle

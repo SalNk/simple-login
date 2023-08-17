@@ -3,7 +3,7 @@ import React from 'react'
 import Template from './Template'
 import welcomeStyle from './style'
 
-export default function ResetPasswordScreen(navigation) {
+export default function ResetPasswordScreen({ navigation }) {
   return (
     <Template>
       <Text style={welcomeStyle.title}>Welcome back</Text>
@@ -14,7 +14,6 @@ export default function ResetPasswordScreen(navigation) {
         style={welcomeStyle.button}>
         send instructions
       </Text>
-      <Text>Don't have an account? <Text>Sign up</Text></Text>
 
     </Template>
   )

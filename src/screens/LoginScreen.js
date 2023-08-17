@@ -4,6 +4,7 @@ import welcomeStyle from './style'
 import { COLORS } from '../outils/constants'
 import { useForm, Controller } from "react-hook-form"
 import axios from 'axios'
+import IconReturn from './IconReturn'
 
 export default function LoginScreen({ navigation }) {
 
@@ -26,7 +27,7 @@ export default function LoginScreen({ navigation }) {
         accept: "application/json"
       }, ...data
     })
-      .then((response)=>navigation.navigate('home'))
+      .then((response) => navigation.navigate('home'))
       .catch(function (error) {
         console.log(error.response.data);
       });
@@ -34,6 +35,7 @@ export default function LoginScreen({ navigation }) {
 
   return (
     <Template>
+      <IconReturn />
       <Text style={welcomeStyle.title}>Welcome back</Text>
 
       <Controller
@@ -70,7 +72,6 @@ export default function LoginScreen({ navigation }) {
         )} />
       <Text style={{ color: 'red' }}> {errors.password && <Text>Veuillez saisir votre mot de passe</Text>}</Text>
 
-
       <View
         style={welcomeStyle.absolute}
       >
@@ -86,7 +87,7 @@ export default function LoginScreen({ navigation }) {
         <Text style={{ color: 'white', textTransform: 'uppercase' }}>login</Text>
       </Pressable>
 
-      <Pressable>
+      <Pressable style={{ display: 'flex', flexDirection: 'row' }}>
         <Text>Don't have an account?</Text>
         <Text
           onPress={() => navigation.navigate('signup')}

@@ -1,8 +1,8 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
 import Template from './Template'
 import welcomeStyle from './style'
-// import ArrowSmallLeftIcon from 'react-native-heroicons/outline'
+import IconReturn from './IconReturn'
 
 
 export default function WelcomeScreen({ navigation }) {
@@ -22,11 +22,6 @@ export default function WelcomeScreen({ navigation }) {
                 onPress={() => navigation.navigate('signup')}
                 style={welcomeStyle.buttonSign}>
                 Sign up
-            </Text>
-
-
-            <Text style={{ position: 'absolute', bottom: 20 }}>
-                Designed with ❤ by @Sal_Aime
             </Text>
         </Template>
     )
